@@ -3,8 +3,11 @@ import { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
 import { db } from "../../../firebase/firebase.config";
 
-
-
+export const config = {
+  api: {
+      externalResolver: true
+  }
+}
 
 export default function handler(req, res) {
 
@@ -12,7 +15,7 @@ export default function handler(req, res) {
   const unsub = onSnapshot(doc(db, "users","h1qQkZmjRchupA8MIlHFs4SEfDU2"), (doc) => {
  
   if(pinId==="Q1"){
-    res.status(200).json({ Entegre: entegre, Pin:doc.data().Entegre_01_Q1})
+  return  res.status(200).json({ Entegre: entegre, Pin:doc.data().Entegre_01_Q1})
   }else if(pinId==="Q2"){
     res.status(200).json({ Entegre: entegre, Pin:doc.data().Entegre_01_Q2})
   }else
@@ -36,7 +39,7 @@ export default function handler(req, res) {
   if(pinId==="Q8"){
     res.status(200).json({ Entegre: entegre, Pin:doc.data().Entegre_01_Q8})
   }
-  
   });
 
   }
+  
