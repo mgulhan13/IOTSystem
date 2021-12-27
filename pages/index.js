@@ -7,7 +7,7 @@ export default function Home() {
 
     return (
     <div>
-        <h1 class="homePageH1">Mehmet <span>GULHAN IOT</span> System</h1>
+        <h1 className="homePageH1">Mehmet <span>GULHAN IOT</span> System</h1>
     </div>
     );
 }
