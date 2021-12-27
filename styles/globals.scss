@@ -35,6 +35,24 @@ a {
 * {
   box-sizing: border-box;
 }
+.loginBTN{
+  border: 0;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.2rem;
+  color: #20BDFF;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-top: 100px;
+  text-decoration: none;
+  &:hover{
+    
+  }
+}
 .homePageH1{
   font-size: 2.5rem;
   position: absolute;

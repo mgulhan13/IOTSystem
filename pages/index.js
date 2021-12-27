@@ -1,13 +1,11 @@
-import { async } from "@firebase/util";
-import { useRef, useState} from "react";
-import { singUp,useAuth,logout,login} from "../firebase/firebase.config";
-
+import Link from 'next/link'
 export default function Home() {
    
 
     return (
     <div>
-        <h1 className="homePageH1">Mehmet <span>GULHAN IOT</span> System</h1>
+        <h1 className="homePageH1">Mehmet <span>GULHAN IOT</span> Sistem</h1>
+        <Link href="./login"><a className='loginBTN'>Giriş Yap</a></Link>
     </div>
     );
 }
